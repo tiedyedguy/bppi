@@ -3,6 +3,7 @@
   "name": "BlueSky Profile Pics Inline",
   "version": "1.0.0",
   "description": "Replaces @mentions in Bluesky posts with inline profile pictures",
+  "homepage_url": "https://github.com/tiedyedguy/bppi",
   "browser_specific_settings": {
     "gecko": {
       "id": "bppi@daddyrobot.live",
