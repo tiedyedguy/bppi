@@ -133,8 +133,8 @@
     img.alt = link.textContent;
     img.title = link.textContent; // Tooltip with @handle
 
-    // Store original content for fallback
-    const originalContent = link.innerHTML;
+    // Store original text for fallback
+    const originalText = link.textContent;
 
     // Replace link content with image
     link.innerHTML = '';
@@ -153,13 +153,13 @@
       };
 
       img.onerror = () => {
-        // Restore original content on image load failure
-        link.innerHTML = originalContent;
+        // Restore original text on image load failure
+        link.textContent = originalText;
         processedLinks.delete(link);
       };
     } else {
-      // Restore original content if profile fetch failed
-      link.innerHTML = originalContent;
+      // Restore original text if profile fetch failed
+      link.textContent = originalText;
       processedLinks.delete(link);
     }
   }
