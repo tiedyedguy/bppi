@@ -1,0 +1,30 @@
+/* Inline profile picture styling */
+.bppi-avatar {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  vertical-align: middle;
+  object-fit: cover;
+  margin: 0 2px;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+  box-shadow: 0 0 0 1.5px rgba(0, 133, 255, 0.6);
+}
+
+.bppi-avatar.bppi-loaded {
+  opacity: 1;
+}
+
+/* Placeholder while loading */
+.bppi-avatar.bppi-loading {
+  background-color: #e0e0e0;
+  opacity: 0.5;
+}
+
+/* Container to prevent layout shift */
+.bppi-avatar-container {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+}
