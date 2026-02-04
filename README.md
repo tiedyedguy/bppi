@@ -41,4 +41,4 @@ No authentication is required. The extension:
 
 ## License
 
-MIT
+[The Unlicense](LICENSE) - Public Domain
